@@ -17,14 +17,19 @@
     list-style: none;
     margin-top: 0px;
     margin-left: 480px;
+    display: inline-block;
+}
+    
 }
 
 .redes{
     margin: 10px 8px 8px 800px;
+    display: inline-block;
 }
 
 .redes a{
     margin-right: 8px;
+    display: inline-block;
 }
 
 .header{
@@ -77,4 +82,64 @@
     transition: all .3s;
   }
 
+.flexslider{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
 
+.slides{
+    overflow: hidden;
+}
+
+.slides img{
+    width: 100%;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex-control-nav{
+    width: 100%;
+    text-align: center;
+}
+
+.flex-control-nav li{
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.flex-control-nav li a{
+    display: block;
+    background: #ececec;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    text-indent: -99999px;
+    position: absolute;
+    top: 90%;
+    z-index: 999;
+
+}
+
+.flex-control-nav li a:hover{
+    background: #24647c;
+}
+
+.flex-control-nav li a.flex-active{
+    background: #24647c;
+}
+
+.flex-direction-nav a{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+}
