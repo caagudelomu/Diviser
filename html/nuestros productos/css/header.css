@@ -1,0 +1,64 @@
+.buscador{
+    width: 337.5px;
+    margin-top: 50px;
+    margin-right: 20px;
+    float: right;
+}
+
+.field{
+    background: #24647c;
+    border: 1.1px solid #24647c;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.input, .boton{
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 35px;
+    padding: 0;
+}
+
+.input{
+    border: none;
+    color: #24647c;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    z-index: 2;
+    background: #24647c;
+}
+
+.boton{
+    font-size: 1.4em;
+    width: 35px;
+    border: none;
+    background: #ececec;
+    opacity: 0.8;
+}
+
+.icon-magnifying-glass{
+    color: #24647c;
+    
+}
+
+.input:focus{
+    outline: none;
+    background: #24647c;
+    color: white;
+}
+
+.input:focus + .boton{
+    opacity: 1;
+    
+}
+
+.input:focus + .boton .icon{
+    transform: translate(0,0);
+}
+
+::placeholder{
+    text-align: center;
+    color: white;
+}
+

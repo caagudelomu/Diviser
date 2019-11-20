@@ -1,0 +1,78 @@
+
+
+.principales{
+    width: 100%; 
+    max-width: 1600px;
+    margin: auto;
+    margin-top: -520px;
+    margin-bottom: 320px;
+    height: 300px;
+
+}
+
+.principales1{
+ border: solid #24647c;
+
+}
+
+.t1{
+    font-family: 'Fira Sans', sans-serif;
+    color: #24647c;
+    margin: 20px;
+    border-bottom: solid 1px #24647c;
+
+}
+.principales2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0 15px 0;
+}
+
+.princi1{
+    width: 470px;
+    height: 470px;
+    margin:15px;
+    border: 1px solid black;
+    flex-shrink:0;
+    color: #39768f;
+    text-align: center;
+    transition: all 300ms;
+    background:#faf9f9;
+    z-index: 9999;
+
+}
+
+.princi1:hover{
+    transform: scale(1.1);
+}
+
+ .princi1 h3{
+     font-family:'Fira Sans', sans-serif ;
+ }
+.oficina1{
+    padding:10px ;
+}
+ .explorar{
+    border: none;
+	background: #24647c;
+	color: #ececec;
+	padding: 10px 40px;
+	font-size: 18px;
+	margin-top: 50px;
+	cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+ }
+    
+ 
+ 
+ .princi1 a{
+     text-decoration: none;
+
+ }
+ 
+ .princi1 h3:hover{
+     color:#ececec;
+     background: black;
+ }
+ 

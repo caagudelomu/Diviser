@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diviser</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flecha.css">
+    <link rel="stylesheet" href="css/estilosnp.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/arriba.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image.png" href="../Diviser/images/diviser.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function () {
+            $('.flexslider').flexslider();
+        });
+    </script>
+</head>
+
+<body>
+
+        
+    <header class="header">
+
+        <div class="wrapper1">
+
+            <nav>
+                <a href="https://www.facebook.com/DIVISER-SAS-201903079877899/" target="_blank"> <img
+                        src="images/facebook.svg" height="25" alt="Facebook Diviser"></a>
+                <a href="https://www.flickr.com/photos/diviser/sets/" target="_blank"> <img
+                        src="images/flickr.svg" height="25" alt="Flickr Diviser"></a>
+                <a href="https://www.youtube.com/user/mercadeodiviser" target="_blank"> <img
+                        src="images/youtube.svg" height="25" alt="Youtube Diviser"></a>
+                <a href="https://twitter.com/divisersas" target="_blank"> <img src="images/twitter.svg"
+                        height="25" alt="Twitter Diviser"></a>
+            </nav>
+            <!-- <div class="usuario"> <img src="../Diviser/images/usuario3.svg" height="15" alt="Usuario">Bienvenido, Visitante<a class="sesion" href="#">
+                 | Iniciar Sesión</a></div> -->
+        </div>
+
+    </header>
+
+    <section id="main">
+        <div id="navegador"></div>
+    </section>
+    <script class="navega">
+        function navegador() {
+            var agente = navigator.userAgent;
+            var navegadores = ["Chrome", "Firefox", "Safari", "Opera", "Trident", "MSIE", "Edge"];
+
+            for (var i in navegadores) {
+                if (agente.indexOf(navegadores[i]) != -1)
+                    return navegadores[i];
+            }
+        }
+
+        var browser = document.getElementById("navegador");
+        window.onload = function () {
+            if (navegador() == "Chrome" | navegador() == "Firefox" ) {
+                var node = document.getElementById("navegador");
+
+                node.parentNode.removeChild(node);
+            }
+            else if (navegador() != "Chrome" | navegador() != "Firefox") {
+                browser.innerHTML = "Para mejorar tu experiencia de navegación te recomendamos utilizar Firefox o Chrome";
+            }
+        }
+
+    </script>
+
+    <header class="header3">
+            <a class="logo" href="../../index.html"><img src="images/Logo.png" height="140"></a> 
+    <nav class="navegacion">
+        <ul class="menu">
+            
+            <li><a href="../../index.html"><span class=""><i class="icon icon-home"></i></span>Inicio</a></li>
+            <li><a href="#"><span class=""><i class="icon icon-battery"></i></span>Soluciones</a>
+                <ul class="submenu2">
+                        <li><a href="#">Mobiliario </br> Oficina</a>
+                        <li><a href="#">Mobiliario </br> Escolar</a>
+                        <li><a href="#">Mobiliario</br> Cafetería</a>
+                </ul>
+            </li>
+            <li><a href="#"><span class=""><i class="icon icon-price-tag"></i></span>Productos</a>
+                <ul class="submenu">
+                <li><a href="../puestos de trabajo/puestos de trabajo.html">Puestos de Trabajo</a>
+                    <ul class="productos1">
+                        <li><a href="../puestos de trabajo/html/gerencias/gerencias.html">Gerencias</a>
+                        <li><a href="#">Recepciones</a>
+                        <li><a href="#">Puestos Ejecutivos</a>
+                        <li><a href="#">Puestos Operativos</a>
+                        <li><a href="#">Módulos Compartidos</a>
+                    </ul>
+                </li>
+                <li><a href="#">Secciones Divisiones</a>
+                    <ul class="productos2">
+                        <li><a href="#">Modulares</a>
+                        <li><a href="#">Vidrio Templado</a>
+                        <li><a href="#">Vidrio Laminado</a>
+                        <li><a href="#">Panel Corredizo</a>
+                        <li><a href="#">Panel Plegable</a>
+                    </ul>
+                </li>
+                <li><a href="#">Espacios Colaborativos</a>
+                    <ul class="productos3">
+                        <li><a href="#">Mesas de Juntas</a>
+                        <li><a href="#">Capacitación</a>
+                        <li><a href="#">Reuniones</a>
+                        <li><a href="#">Trabajo Grupal</a>
+                    </ul>
+                </li>
+                <li><a href="#">Muebles Auxiliares</a>
+                   <ul class="productos4">
+                        <li><a href="#">Bibliotecas</a>
+                        <li><a href="#">Credenzas</a>
+                        <li><a href="#">Mesas de Impresión</a>
+                        <li><a href="#">Gabinetes</a>
+                    </ul>
+                </li>
+                <li><a href="#">Sofás Lounge</a>
+                    <ul class="productos5">
+                        <li><a href="#">Sofás</a>
+                        <li><a href="#">Poltronas</a>
+                        <li><a href="#">Mesas Auxiliares</a>
+                        <li><a href="#">Centros de Entretenimiento</a>
+                    </ul>
+                </li>
+                <li><a href="#">Salas de Espera</a>
+                    <ul class="productos6">
+                        <li><a href="#">Sillas Tandem</a>
+                        <li><a href="#">Revisteros</a>
+                        <li><a href="#">Mesas</a>
+                        <li><a href="#">Señalización</a>
+                    </ul>
+                </li>
+                <li><a href="#">Soluciones en Decoración</a>
+                    <ul class="productos7">
+                        <li><a href="#">Logos</a>
+                        <li><a href="#">Murales Enchapados</a>
+                        <li><a href="#">Divisiones Ecológicas</a>
+                        <li><a href="#">Alfombras Modulares y PVC</a>
+                    </ul>
+                </li>
+                <li><a href="#">Sillas Giratorias</a>
+                    <ul class="productos8">
+                        <li><a href="#">Presidenciales</a>
+                        <li><a href="#">Ejecutivas</a>
+                        <li><a href="#">Operativas</a>
+                        <li><a href="#">Butacos Cajero</a>
+                    </ul>
+                </li>
+                <li><a href="#">Sillas Fijas</a>
+                    <ul class="productos9">
+                        <li><a href="#">Interlocutoras</a>
+                        <li><a href="#">Plasticas</a>
+                        <li><a href="#">Tapizadas</a>
+                        <li><a href="#">Pintadas</a>
+                    </ul>
+                </li>
+                <li><a href="#">Sistemas de Archivo</a>
+                    <ul class="productos10">
+                        <li><a href="#">Archivo Rodante</a>
+                        <li><a href="#">Folderama</a>
+                        <li><a href="#">Estanterias</a>
+                        <li><a href="#">Archivadores</a>
+                    </ul>
+                </li>
+                <li><a href="#">Sistemas de Almacenamiento</a>
+                    <ul class="productos11">
+                        <li><a href="#">Estantería</a>
+                        <li><a href="#">Palet Americano</a>
+                        <li><a href="#">Palet Europeo</a>
+                    </ul>
+                </li>
+                <li><a href="#">Restaurante y Cafetería</a>
+                    <ul class="productos12">
+                        <li><a href="#">Mesas</a>
+                        <li><a href="#">Sillas</a>
+                        <li><a href="#">Alcatraces</a>
+                        <li><a href="#">Sofás</a>
+                    </ul>
+                </li>
+                <li><a href="#">Espacios de Formación</a>
+                    <ul class="productos13">
+                        <li><a href="#">Mesas</a>
+                        <li><a href="#">Biblioteca</a>
+                        <li><a href="#">Sillas Escolares</a>
+                        <li><a href="#">Portalibros</a>
+                    </ul>
+                </li>
+                <li><a href="#">Mobiliario Escolar</a>
+                    <ul class="productos14">
+                        <li><a href="#">Tableros</a>
+                        <li><a href="#">Sillas Universitarias</a>
+                        <li><a href="#">Escritorios Profesor</a>
+                        <li><a href="#">Muebles Biblioteca</a>
+                    </ul>
+                </li>
+                <li><a href="#">Soluciones en Casilleros</a>
+                    <ul class="productos15">
+                        <li><a href="#">Lockers Metálicos</a>
+                        <li><a href="#">Lockers en Melamina</a>
+                        <li><a href="#">Casillero para Celulares</a>
+                        <li><a href="#">Banca</a>
+                    </ul>
+                </li>
+                <li><a href="#">Mobiliario Campamentos</a>
+                    <ul class="productos16">
+                        <li><a href="#">Colchones</a>
+                        <li><a href="#">Lockers y Armarios</a>
+                        <li><a href="#">Mesas de Noche</a>
+                        <li><a href="#">Camas y Camarotes</a>
+                        <li><a href="#">Cocinas y Muebles Especiales</a>
+                    </ul>
+                </li>
+            </ul></li>
+
+            
+
+
+
+            <li><a href="#"><span class=""><i class="icon icon-text-document-inverted"></i></span>Temas de Interés</a></li>
+            <li><a href="#"><span class=""><i class="icon icon-typing"></i></span>Contáctenos</a></li> </br>
+        
+        </ul>
+    </nav>
+    
+    <form class="buscador">
+        <fieldset class="field">
+            <input class="input" type="search" placeholder="&#xF002; Buscar" style="font-family:Fira Sans, FontAwesome" />
+            <button class="boton" type="submit">
+                    <i class="icon icon-magnifying-glass"></i>
+            </button>
+        </fieldset>
+    </form>
+    
+    </header>
+
+    
+
+
+
+               
+    <div class="principales">
+        <div class="principales1">
+            <h1 class="t1">CATEGORIAS PRINCIPALES</h1>
+            <div class="principales2">
+                
+                    <div class="princi1">
+                        <img class="oficina1" src="images/oficina2.jpg" width="450" height="300" alt="">
+                        <h2>MOBILIARIO DE OFICINA</h2>
+                        <a href="#"><h3 class="explorar">Explorar Ahora!</h3>
+                        </a>
+                            
+                        
+                    </div>
+
+                    <div class="princi1">
+
+                        <img class="oficina1" src="images/escolar2.jpg" width="450" height="300" alt="">
+                        <h2>MOBILIARIO ESCOLAR</h2>
+                        <a href=""><h3 class="explorar">Explorar Ahora!</h3>
+                            
+                        </a>
+                    </div>
+
+                    <div class="princi1">
+                        <img class="oficina1" src="images/cafeteria3.jpg" width="450" height="300" alt="">
+                        <h2>MOBILIARIO DE CAFETERIA</h2>
+                        <a href="">
+                            <h3 class="explorar">Explorar Ahora!</h3>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+
+    </div>
+    <span class="ir-arriba icon-chevron-with-circle-up"></span>
+
+    <div class="info-container1">
+        <div class="info-main">
+
+            <h4>PRODUCTOS Y VENTAS</h4>
+            <ul class="regiones">
+                <li>
+                    <a href="html/productos/productos.html" target="_blank">Condiciones de Ventas </a>
+                </li>
+                <li>
+                    <a href="html/productos/productos.html" target="_blank">Garantía de Productos</a>
+                </li>
+                <li>
+                    <a href="html/productos/productos.html" target="_blank">Garantía a Nivel Nacional</a>
+                </li>
+                <li>
+                    <a href="html/productos/productos.html" target="_blank">Envios a Nivel Nacional </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="info-main">
+            <h4>POLITICAS DEL SITIO WEB</h4>
+            <ul class="regiones">
+                <li>
+                    <a href="html/politicas/politicas.html" target="_blank">Cancelación de Pedidos </a>
+                </li>
+
+                <li>
+                    <a href="html/politicas/politicas.html" target="_blank">Cambio de Pedido</a>
+                </li>
+                <li>
+
+                    <a href="html/politicas/politicas.html" target="_blank">Política de privacidad </a>
+                </li>
+
+                <li>
+                    <a href="html/politicas/politicas.html" target="_blank">Terminos y Condiciones </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="info-main">
+            <h4>Institucional</h4>
+            <ul class="regiones">
+                <li>
+                    <a href="html/institucional/institucional.html" target="_blank">¿Quiénes Somos ? </a>
+                </li>
+
+                <li>
+                    <a href="html/institucional/institucional.html" target="_blank">Misión</a>
+                </li>
+                <li>
+
+                    <a href="html/institucional/institucional.html" target="_blank">Visión</a>
+                </li>
+
+                <li>
+                    <a href="html/institucional/institucional.html" target="_blank">Nuestra Historia </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-columna">
+                    <form action="/suscribete/">
+                        <label for="email">
+                            <h3>Suscríbete a nuestro boletín</h3>
+                        </label>
+                        <input type="email" placeholder="Escriba su Correo" id="email" required>
+                        <input type="submit" value=" Suscribirse">
+                    </form>
+                </div>
+
+
+
+                <div class="footer-columna">
+                    <h3>Dirección</h3>
+                    <p>Calle 29B #56-67<br> Unidad Industrial de Belen </p><br>
+
+                    <p>Telefono:+ 57 (4) 316-00-08 </p><br>
+
+                    <p>info@diviserltda.com</p>
+                </div>
+
+                <div class="footer-columna">
+                    <h3>Sobre Nosotros</h3>
+                    <p class="veinte"> <img src="images/20.png" height="25" width="25" alt=""></p>
+                    <P>Años de experiencia nos permiten brindar respaldo, confiabilidad y competencia, enfocados en el
+                        mercado mayorista e institucional.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <header class="header">
+
+        <div class="wrapper1">
+
+
+            <nav>
+                <a href="https://www.facebook.com/DIVISER-SAS-201903079877899/" target="_blank"> <img
+                        src="images/facebook.svg" height="25" alt="Facebook Diviser"></a>
+                <a href="https://www.flickr.com/photos/diviser/sets/" target="_blank"> <img src="images/flickr.svg"
+                        height="25" alt="Flickr Diviser"></a>
+                <a href="https://www.youtube.com/user/mercadeodiviser" target="_blank"> <img src="images/youtube.svg"
+                        height="25" alt="Youtube Diviser"></a>
+                <a href="https://twitter.com/divisersas" target="_blank"> <img src="images/twitter.svg" height="25"
+                        alt="Twitter Diviser"></a>
+            </nav>
+            <div class="usuario"> Derechos Reservados</div>
+        </div>
+
+    </header>
+
+</body>
+
+</html>

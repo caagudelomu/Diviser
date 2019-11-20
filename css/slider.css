@@ -10,32 +10,40 @@
   
   .flexslider{
       margin: -10px;
-      width: 101.2%;
+      width: 100.2%;
       position: relative;
+      margin-top: -560px;
+      
+
   }
   
   .slides{
       overflow: hidden;
+      border-top: solid #24647c;
+      
   }
   
   .slides img{
-      width: 101%;
+      width: 100.2%;
+      height: 740px;
   }
   
   .slides,
   .flex-control-nav,
   .flex-direction-nav {
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     list-style: none;
+    margin-right: -6px;
   }
   
   .flex-control-nav{
-      width: 100%;
+      width: 100.2%;
       text-align: center;
       position: absolute;
       bottom: 5%;
       z-index: 999;
+      
   }
   
   .flex-control-nav li{
@@ -63,6 +71,7 @@
   .flex-direction-nav a{
       display: block;
       text-decoration: none;
+      margin-left: 10px;
       position: absolute;
       top: 45%;
       z-index: 999;
@@ -81,11 +90,13 @@
   .flex-direction-nav .flex-prev{
       left: 0;
       background-image: url('../images/cuadro.svg');
+      
   }
   
   .flex-direction-nav .flex-next{
       right: 0;
       background-image: url('../images/cuadro.svg');
+      
 
   }
   
@@ -100,107 +111,25 @@
   .flex-direction-nav a.flex-next:before {
     content: '\f002';
   }
+
   
-  .flex-caption1 h1{
-      font-family: 'Fira Sans', sans-serif;
-      position: absolute;
-      top: 21%;
-      left: 15%;
-      text-align: center;
-      width: 280px;
-      height: 320px;
-      font-size: 25px;
-      color: white;
-      font-weight: bold;
-      background-color: #24647c;
-
-  }
-
-  .flex-caption1 h2{
-    font-family: 'Fira Sans', sans-serif;
-    position: absolute;
-    top: 35%;
-    left: 18%;
-    text-align: center;
-    width: 180px;
-    height: 220px;
-    font-size: 15px;
-    color: white;
-    font-weight: bold;
-    
-}
-
-.flex-caption1 h3{
-    font-family: 'Fira Sans', sans-serif;
-    position: absolute;
-    top: 42%;
-    left: 18%;
-    text-align: center;
-    width: 180px;
-    height: 220px;
-    font-size: 12px;
-    color: white;
-    font-weight: bold;
-    
-}
-
-.flex-caption1 a{
-    font-family: 'Fira Sans', sans-serif;
-    position: absolute;
-    top: 55%;
-    left: 18%;
-    text-align: center;
-    width: 180px;
-    height: 220px;
-    font-size: 12px;
-    color: white;
-    font-weight: bold;
-    
-}
-
-  .flex-caption2 p{
-    font-family: 'Fira Sans', sans-serif;
-    position: absolute;
-    top: 21%;
-    left: 15%;
-    text-align: center;
-    width: 280px;
-    height: 320px;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    background-color: #24647c;
-}
-
-.flex-caption3 p{
-    font-family: 'Fira Sans', sans-serif;
-    position: absolute;
-    top: 21%;
-    left: 15%;
-    text-align: center;
-    width: 280px;
-    height: 320px;
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    background-color: #24647c;
-}
+  
   
   .flexslider:hover .flex-direction-nav .flex-prev{
-      opacity: 1;
+      opacity: 0.8;
       left: 15px;
   }
   
   .flexslider:hover .flex-direction-nav .flex-prev:hover{
-      opacity: 1;
+      opacity: 0.8;
   }
   
   .flexslider:hover .flex-direction-nav .flex-next{
-      opacity: 1;
+      opacity: 0.8;
       right: 15px;
       
   }
   
   .flexslider:hover .flex-direction-nav .flex-next:hover{
-      opacity: 1;
+      opacity: 0.8;
   }

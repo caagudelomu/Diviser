@@ -1,0 +1,721 @@
+
+.header3{
+    margin-top: -0.1px;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.navegacion{
+    top: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    
+    
+}
+
+.navegacion ul{
+    list-style: none;
+    
+    
+}
+
+.navegacion > ul {
+    display: table;
+    width: 100%;
+    background: white;
+    position: relative;
+    
+
+}
+
+.navegacion > ul li{
+    display: table-cell;
+    height: 100%;
+    
+}
+
+/*submenu*/
+
+
+.navegacion > ul > li:hover > ul{
+    display: block;
+    height: 140px;
+    
+}
+
+.navegacion > ul > li > ul{
+    display: inline-block;
+    position: absolute;
+    background: linear-gradient(180deg, #24647c 58%, rgb(255, 255, 255, .0001) 0%);
+    left: -460px;
+    right: -460px;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 999;
+}
+
+.submenu2{
+    margin-left: 550px;
+    margin-right: 1085px;
+}
+
+.submenu2  li a{
+    display: inline-block;
+    position: absolute;
+    
+    background: linear-gradient(180deg, #24647c 58%, rgb(255, 255, 255, .0001) 0%);
+    margin-left: 0px;
+    
+    overflow: hidden;
+    height: 0%;
+    /* -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; */
+    z-index: 999;
+}
+
+
+
+.navegacion > ul li a{
+    color: #24647c;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.navegacion > ul > li > ul > li a:hover{
+    background: white;
+    color: #24647c;
+    
+    
+}
+
+.navegacion > ul > li > ul> li a{
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.navegacion > ul > li > a span{
+    background: #24647c;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -105px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.navegacion > ul > li > a span .icon{
+    color: white;
+    display: block;
+    line-height: 60px;
+}
+
+.navegacion > ul > li > a:hover > span{
+    top: 0;
+    
+
+}
+
+.navegacion > ul > li > a:hover{
+    color: white;
+}
+
+.logo{
+    margin-left: 180px;
+}
+
+.logo:hover{
+    opacity: 0.6;
+}
+
+/*productos 1*/
+
+.productos1{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c  25.8%, rgb(255, 255, 255, .0001) 0%);  
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos1 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos1 li a:hover{
+    background-color: white;
+    color: #24647c;
+    
+
+}
+
+.submenu li:hover .productos1{
+    display: block;
+    top: 80px; 
+    left: 0px;  
+}
+
+/*productos2*/
+
+.productos2{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 24%, rgb(255, 255, 255, .0001) 0%); 
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos2 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos2 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos2{
+    display: block;
+    top: 81px; 
+    left: 10px;  
+}
+
+/*productos3*/
+
+.productos3{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 18.2%, rgb(255, 255, 255, .0001) 0%);  
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos3 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos3 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos3{
+    display: block;
+    top: 81px; 
+    left: 100px;  
+}
+
+/*productos4*/
+
+.productos4{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 17.6%, rgb(255, 255, 255, .0001) 0%);   
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos4 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos4 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos4{
+    display: block;
+    top: 81px; 
+    left: 234px;  
+}
+
+/*productos5*/
+
+.productos5{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 18.8%, rgb(255, 255, 255, .0001) 0%);
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos5 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos5 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos5{
+    display: block;
+    top: 81px; 
+    left: 318px;  
+}
+
+/*productos6*/
+
+.productos6{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 15.8%, rgb(255, 255, 255, .0001) 0%);   
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos6 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos6 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos6{
+    display: block;
+    top: 81px; 
+    left: 434px;  
+}
+
+/*productos7*/
+
+.productos7{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 22.4%, rgb(255, 255, 255, .0001) 0%);   
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos7 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos7 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos7{
+    display: block;
+    top: 81px; 
+    left: 530px;  
+}
+
+/*productos8*/
+
+.productos8{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 17.4%, rgb(255, 255, 255, .0001) 0%);  
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos8 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos8 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos8{
+    display: block;
+    top: 81px; 
+    left: 650px;  
+}
+
+/*productos9*/
+
+.productos9{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 15.4%, rgb(255, 255, 255, .0001) 0%); 
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos9 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos9 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos9{
+    display: block;
+    top: 81px; 
+    left: 750px;  
+}
+
+/*productos10*/
+
+.productos10{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 17.4%, rgb(255, 255, 255, .0001) 0%);
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos10 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos10 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos10{
+    display: block;
+    top: 81px; 
+    left: 840px;  
+}
+
+/*productos11*/
+
+.productos11{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 13.4%, rgb(255, 255, 255, .0001) 0%);
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos11 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos11 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos11{
+    display: block;
+    top: 81px; 
+    left: 1010px;  
+}
+
+/*productos12*/
+
+.productos12{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 12.3%, rgb(255, 255, 255, .0001) 0%); 
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos12 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos12 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos12{
+    display: block;
+    top: 81px; 
+    left: 1180px;  
+}
+
+/*productos13*/
+
+.productos13{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 15.5%, rgb(255, 255, 255, .0001) 0%);
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos13 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos13 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos13{
+    display: block;
+    top: 81px; 
+    left: 1290px;  
+}
+
+/*productos14*/
+
+.productos14{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 21%, rgb(255, 255, 255, .0001) 0%);
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos14 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos14 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos14{
+    display: block;
+    top: 81px; 
+    left: 1370px;  
+}
+
+/*productos15*/
+
+.productos15{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 18.2%, rgb(255, 255, 255, .0001) 0%); 
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos15 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos15 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos15{
+    display: block;
+    top: 81px; 
+    left: 1460px;  
+}
+
+/*productos16*/
+
+.productos16{
+    position: absolute;
+    background: linear-gradient(90deg, #24647c 21.2%, rgb(255, 255, 255, .0001) 0%);
+    width: 130%;
+    display: none;
+    left: 169px;
+    top: 30px;
+}
+
+.productos16 li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-transition: all 600ms ease;
+    -o-transition:all 600ms ease;
+    transition: all 600ms ease;
+}
+
+
+
+.productos16 li a:hover{
+    background-color: white;
+    color: #24647c;
+}
+
+.submenu li:hover .productos16{
+    display: block;
+    top: 81px; 
+    left: 1410px; 
+}
